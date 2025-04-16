@@ -1,2 +1,2 @@
-# IoT_Final
-COMP-SCI 5577 IoT Final Project
+# Smart Health & Fire Monitoring System Based on ESP32 and iPad Dashboard
+N/A
