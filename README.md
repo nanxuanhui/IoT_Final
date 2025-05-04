@@ -2,6 +2,10 @@
 
 A comprehensive health monitoring system built with ESP32 microcontroller and iOS app.
 
+## Demo Link
+
+https://drive.google.com/drive/folders/1AjyDtbWgDChqLi7MwOfWCEQiP9K11T0d?usp=sharing
+
 ## Project Overview
 
 This project consists of two main components:
@@ -29,7 +33,6 @@ This project consists of two main components:
 - Humidity
 - Air Quality
 - Flame Detection
-- Fall Detection
 - Pose Detection
 
 ### iOS App Features
@@ -86,7 +89,6 @@ python server.py
 - Log file: esp32_server.log
 
 ### iOS App Configuration
-- Server URL: http://localhost:8888
 - Default thresholds:
   - Heart Rate: 60-100 BPM
   - Blood Oxygen: >95%
@@ -102,32 +104,6 @@ python server.py
 5. Set thresholds for alerts
 6. View historical data
 
-## Project Structure
-
-```
-ESP_Final/
-├── ESP_Final/
-│   ├── Models/
-│   │   ├── SensorData.swift
-│   │   └── User.swift
-│   ├── Views/
-│   │   ├── Auth/
-│   │   │   ├── LoginView.swift
-│   │   │   └── RegisterView.swift
-│   │   ├── Settings/
-│   │   │   └── ThresholdSettingsView.swift
-│   │   └── MainTabView.swift
-│   ├── ViewModels/
-│   │   ├── SensorDataViewModel.swift
-│   │   └── UserViewModel.swift
-│   └── Utils/
-│       └── WebSocketManager.swift
-└── server/
-    ├── server.py
-    ├── requirements.txt
-    └── sensor_data.db
-```
-
 ## API Documentation
 
 ### Authentication
@@ -137,7 +113,6 @@ ESP_Final/
 ### Sensor Data
 - POST /api/post-data - Submit sensor data
 - GET /api/get-data - Retrieve sensor data
-- GET /api/ws - WebSocket connection
 
 ## Contributing
 
